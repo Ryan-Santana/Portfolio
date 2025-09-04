@@ -4,28 +4,41 @@ padding: 0;
 box-sizing: border-box;
 font-family: "Montserrat", sans-serif;
 font-optical-sizing: auto;
-background-color: rgb(208, 179, 235);
 }
 html {
 scroll-behavior: smooth;
 }
 
-
+main {
+text-align: center;
+height: 950px;
+font-size: 30px;
+padding-top: 290px;
+color: #fff;
+}
 
 /* FRONT */
+#front {
+background-image: url("fundoroxo.png");
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+}
 .container {
 color: aliceblue;
 height: 100px;
 width: 100%;
-background-color: bisque;
 text-align: right;
+background-color: transparent;
+background: none;
 }
 
 .right-nav {
 font-size: 22px;    
 display: inline-block;
 font-weight: bold;
-padding: 30px
+margin: 35px;
 }       
 
 .gradiente {
@@ -33,13 +46,6 @@ background-image: linear-gradient(purple, rgb(235, 115, 135));
 background-clip: text;
 color: transparent;
 }
-
-#main-page {
-text-align: center;
-height: 950px;
-font-size: 30px;
-padding-top: 290px;
-}   
 
 .botao-projeto {
 position: relative;
@@ -56,6 +62,42 @@ border-image: linear-gradient(#8a2be2, #6A1B9A);
 border-radius: 6px;
 }
 
+.botao-projeto:hover {
+cursor: pointer;
+position: relative;
+text-align: center;
+font-size: 16px;
+height: 55px;
+width: 200px;
+background-image: linear-gradient(to left,#6c20b3, #6A1B9A);
+background-clip: border-box;    
+color: aliceblue;
+font-weight: bold;
+border: none;
+border-image: linear-gradient(#6c20b3, #6A1B9A);
+border-radius: 6px;
+}
+
+.botao-projeto:active {
+cursor: pointer;
+position: relative;
+text-align: center;
+font-size: 16px;
+height: 55px;
+width: 200px;
+background-image: linear-gradient(to left,#3e0f69, #3e0f69);
+background-clip: border-box;    
+color: aliceblue;
+font-weight: bold;
+border: none;
+border-image: linear-gradient(#3e0f69, #3e0f69);
+border-radius: 6px;
+}
+
+#redes-sociais{
+display: inline-block;
+vertical-align: middle;
+}
 .botao-cv {
 position: relative;
 text-align: center;
@@ -75,7 +117,7 @@ border-radius: 6px;
 padding: 50px;
 }
 
-.botao-rs{
+/* .botao-rs{
 position: relative;
 text-align: center;
 padding: 5px;
@@ -85,11 +127,24 @@ color: aliceblue;
 border: none;
 border-image: linear-gradient(#191970, #212121);
 border-radius: 6px;
-}
+} */
+
+
 .material-symbols-outlined {
 color: aliceblue;
 background-color: transparent;
 }
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header a:hover {
+    text-decoration: none;
+    color: #784596;
+}
+
 /* FRONT */
 
 
@@ -100,6 +155,37 @@ min-height: 580px;
 color: aliceblue;
 background-color: rgb(37, 37, 37);
 }
+
+.mini-title {
+    border: 2px solid rgb(37, 37, 37);
+    height: 100px;
+    text-align: center;
+}
+
+.mini-title-h1 {
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 42px;
+    background-image: linear-gradient(to top,#8529db, #0ed5e4);
+    background-clip: text;
+    color: transparent;
+}
+
+.content-sobremim {
+    border: 2px solid white;
+    width: 50%;
+    height: 480px;
+}
+
+.content-ferramentas {
+    border: 2px solid white;
+    width: 50%;
+    height: 480px;
+}
+
+
+
+
 /* SOBRE */
 
 
@@ -125,3 +211,4 @@ background-color: rgb(37, 37, 37);
 #sobre h1 {
     position: relative;
 }
+
