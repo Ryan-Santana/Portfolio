@@ -172,18 +172,33 @@ background-color: rgb(37, 37, 37);
 }
 
 .content-sobremim {
-    border: 2px solid white;
     width: 50%;
     height: 480px;
 }
 
 .content-ferramentas {
-    border: 2px solid white;
-    width: 50%;
-    height: 480px;
+    background-color: rgb(37, 37, 37);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    width: 35%;
+    height: 280px;
+    padding: 30px;
 }
 
+.badges {
+    display: inline-block;
+    vertical-align: middle;
+    gap: 15px;
+    margin-top: 30px;
+}
 
+.badge {
+padding: 8px;
+background-image: linear-gradient(to left,#8a2be2, #6A1B9A);
+border-image: linear-gradient(#8a2be2, #6A1B9A);
+border-radius: 15px;
+
+}
 
 
 /* SOBRE */
