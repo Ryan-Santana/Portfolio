@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 * {
 margin: 0;
 padding: 0;
@@ -154,10 +156,10 @@ width: 100%;
 min-height: 580px;
 color: aliceblue;
 background-color: rgb(37, 37, 37);
+align-content: start;
 }
 
 .mini-title {
-    border: 2px solid rgb(37, 37, 37);
     height: 100px;
     text-align: center;
 }
@@ -207,10 +209,130 @@ border-radius: 15px;
 /* PROJETOS */
 #projetos {
 width: 100%;
-height: 800px;
+height: 900px;
 color: aliceblue;
 background-color: rgb(0, 0, 0);
+align-content: start;
 }
+
+#div-projetos {
+    margin-top: 10px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 40px;
+}
+
+.card-projeto {
+    height: 550px;
+    width: 450px;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+    border-radius: 12px 12px 12px 12px;
+}
+
+.desc-projetos {
+    padding: 13px 20px 20px 20px;
+    margin-top: 10px;
+}
+.botoes-projetos {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 20px;
+}
+
+.btnDemo {
+    border: 2px solid white;
+    padding: 15px;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    box-shadow: 0 0 0 1px linear-gradient(to left,#a65fe9, #822bd3);
+    border-radius: 12px 12px 12px 12px;
+    background-image: linear-gradient(to left,#a85dee, #6A1B9A);
+    background-clip: border-box;    
+    border: none;
+    border-image: linear-gradient(#a85dee, #6A1B9A);
+}
+
+.btnDemo:hover {
+    border: 2px solid white;
+    padding: 15px;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    box-shadow: 0 0 0 1px linear-gradient(to left,#a65fe9, #822bd3);
+    border-radius: 12px 12px 12px 12px;
+    background-image: linear-gradient(to left,#c79fec, #a24af5);
+    background-clip: border-box;    
+    border: none;
+    border-image: linear-gradient(#c79fec, #a24af5);
+}
+
+.btnDemo:active {
+    border: 2px solid white;
+    padding: 15px;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    box-shadow: 0 0 0 1px linear-gradient(to left,#a65fe9, #822bd3);
+    border-radius: 12px 12px 12px 12px;
+    background-image: linear-gradient(to left,#a65fe9, #822bd3);
+    background-clip: border-box;    
+    border: none;
+    border-image: linear-gradient(#a65fe9, #822bd3);
+}
+
+.btnCodigo {
+    padding: 15px;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue; 
+    font-weight: bold;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+    border-radius: 12px 12px 12px 12px;
+    background-color: rgb(5, 5, 5);
+}
+
+.btnCodigo:hover {
+    padding: 15px;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue; 
+    font-weight: bold;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+    border-radius: 12px 12px 12px 12px;
+    background-color: rgb(3, 3, 3);
+}
+
+.btnCodigo:active {
+    padding: 15px;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue; 
+    font-weight: bold;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+    border-radius: 12px 12px 12px 12px;
+    background-color: rgb(0, 0, 0);
+}
+
 /* PROJETOS */
 
 
@@ -223,7 +345,5 @@ background-color: rgb(37, 37, 37);
 }
 /* CONTATOS */
 
-#sobre h1 {
-    position: relative;
-}
+
 
