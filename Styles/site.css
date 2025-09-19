@@ -143,6 +143,7 @@ width: 100%;
 height: 1000px;
 color: aliceblue;
 background-color: rgb(37, 37, 37);
+box-shadow: 0 0 0 0.5px rgba(255, 255, 255, 0.1);
 }
 
 .mini-title {
@@ -201,6 +202,7 @@ width: 100%;
 height: 1000px;
 color: aliceblue;
 background-color: rgb(0, 0, 0);
+box-shadow: 0 0 0 0.5px rgba(255, 255, 255, 0.1);
 align-content: start;
 text-align: center;
 }
@@ -336,29 +338,184 @@ background-color: rgb(37, 37, 37);
 }
 
 .div-contato {
-    border: 1px solid white;
     width: 50%;
 }
 
 .div-form {
-    border: 1px solid white;
+    margin: 20px;
     width: 50%;
 }
 
-.logo-contato {
-padding: 8px;
-background-image: linear-gradient(to left,#8a2be2, #6A1B9A);
-border-image: linear-gradient(#8a2be2, #6A1B9A);
+.badge-contato {
+padding: 10px;
+width: 60px;
+height: 60px;
+margin-top: 30px;
+background-image: linear-gradient(to left,#0ed5e4, #2991e7);
+border-image: linear-gradient(#0ed5e4, #2991e7);
 border-radius: 15px;
+text-align: center;
+background-clip: border-box;
 }
 
+.logo-email {
+ color: white;
+ background-color: white;
+ height: 40px;
+ width: 40px;
+}
 
+li {
+    display: flex;
+    margin-left: 40px;
+    width: 50%;
+}
 
+li section{
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 10px;
+}
 
+.pai-logo-contato {
+    border: 1px solid white;
+    height: 150px;
+    width: 80px;
+}
 
+.card-form{
+    background-color: rgb(37, 37, 37);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    width: 75%;
+    height: 80%;
+    padding: 75px 30px;
+    display: flexbox;
+}
 
+.prim-linha-form {
+    width: 100%;
+    display: flex;
+    gap: 6%;
+}
 
+.input-form {
+    background-color: rgb(37, 37, 37);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    border: none;
+    height: 40px;
+    width: 299px;
+    color: white;
+    margin-top: 5px;
+}
 
+.input-form:focus {
+    background-color: rgb(47, 47, 47);;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.055);
+    border-radius: 12px;
+    border: none;
+    color: white;
+}
+
+.input-assunto {
+    background-color: rgb(37, 37, 37);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    border: none;
+    height: 40px;
+    width: 100%;
+    color: white;
+    margin-top: 5px;
+}
+
+.input-assunto:focus {
+    background-color: rgb(47, 47, 47);;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.055);
+    border-radius: 12px;
+    border: none;
+    color: white;
+}
+
+.input-msg {
+    background-color: rgb(37, 37, 37);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    border: none;
+    height: 120px;
+    width: 100%;
+    color: white;
+    text-align: justify;
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+
+.input-msg:focus {
+    background-color: rgb(47, 47, 47);;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.055);
+    border-radius: 12px;
+    border: none;
+    color: white;
+}
+
+.seg-linha-form, .terc-linha-form {
+    margin-top: 40px;
+}
+
+.enviar-email {
+    margin-top: 40px;
+    border: 2px solid white;
+    padding: 15px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    box-shadow: 0 0 0 1px linear-gradient(to left,#a65fe9, #822bd3);
+    border-radius: 12px 12px 12px 12px;
+    background-image: linear-gradient(to left,#a85dee, #6A1B9A);
+    background-clip: border-box;    
+    border: none;
+    border-image: linear-gradient(#a85dee, #6A1B9A);
+}
+
+.enviar-email:hover {
+    cursor: pointer;
+    margin-top: 40px;
+    border: 2px solid white;
+    padding: 15px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    box-shadow: 0 0 0 1px linear-gradient(to left,#bd85f1, #9c52e2);
+    border-radius: 12px 12px 12px 12px;
+    background-image: linear-gradient(to left,#bd85f1, #9c52e2);
+    background-clip: border-box;    
+    border: none;
+    border-image: linear-gradient(#bd85f1, #9c52e2);
+}
+
+.enviar-email:active {
+    margin-top: 40px;
+    border: 2px solid white;
+    padding: 15px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    box-shadow: 0 0 0 1px linear-gradient(to left,#6A1B9A, #4c1170);
+    border-radius: 12px 12px 12px 12px;
+    background-image: linear-gradient(to left,#6A1B9A, #4c1170);
+    background-clip: border-box;    
+    border: none;
+    border-image: linear-gradient(#6A1B9A, #4c1170);
+}
 
 /* CONTATOS */
 
@@ -366,11 +523,55 @@ border-radius: 15px;
 
 /* RODAPÉ */
 #rodape {
-    position: relative;
+position: relative;
 width: 100%;
-height: 280px;
+height: 230px;
 color: aliceblue;
 background-color: rgb(0, 0, 0);
+box-shadow: 0 0 0 0.5px rgba(255, 255, 255, 0.1);
+display: flex;
 }
-
+.text-rodape1{
+    margin-left: 160px;
+    margin-top: 40px;
+    display: flexbox;
+    height: 155px;
+    width: 34%;
+    color: rgb(212, 212, 212);
+    box-shadow: 0 0.5px 0 0 rgba(255, 255, 255, 0.1);
+}
+.text-rodape2{
+    display: flexbox;
+    margin-top: 45px;
+    height: 150px;
+    width: 34%;
+    box-shadow: 0 0.5px 0 0 rgba(255, 255, 255, 0.1);
+}
+.text-rodape3{
+    margin-top: 45px;
+    display: flexbox;
+    height: 150px;
+    width: 14%;
+    box-shadow: 0 0.5px 0 0 rgba(255, 255, 255, 0.1);
+}
+.dev-title {
+    font-weight: bold;
+    font-size: 28px;
+    background-image: linear-gradient(to top,#8426db, #0ed5e4);
+    background-clip: text;
+    color: transparent;
+}
+.links-rapidos-rodape,.links-rapidos-rodape a {
+    text-decoration: none;
+    display: grid;
+    gap: 10px;
+    color: rgb(212, 212, 212);
+}
+.links-rapidos-rodape a:hover{
+    text-decoration: none;
+    display: grid;
+    gap: 10px;
+    color: rgb(212, 212, 212);
+    text-decoration: underline;
+}
 /* RODAPÉ */
