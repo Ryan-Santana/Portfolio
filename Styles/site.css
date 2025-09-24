@@ -26,6 +26,7 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center;
 }
+
 .container {
 color: aliceblue;
 height: 100px;
@@ -49,7 +50,10 @@ color: transparent;
 }
 
 .botao-projeto {
-position: relative;
+display: flex;           
+align-items: center;         
+justify-content: center;     
+gap: 8px; 
 text-align: center;
 font-size: 16px;
 height: 55px;
@@ -99,13 +103,18 @@ border-radius: 6px;
 display: inline-block;
 vertical-align: middle;
 }
+
 .botao-cv {
+display: flex;           
+align-items: center;         
+justify-content: center;     
+gap: 8px; 
 position: relative;
 text-align: center;
 font-size: 16px;
 width: 200px;
 height: 55px;
-background-image: linear-gradient(to left,#191970, #212121);
+background-image: linear-gradient(#191970, #212121);
 background-clip: border-box;
 color: aliceblue;
 font-weight: bold;
@@ -114,8 +123,52 @@ border-image: linear-gradient(#191970, #212121);
 border-radius: 6px;
 }
 
+.botao-cv:hover {
+cursor: pointer;
+display: flex;           
+align-items: center;         
+justify-content: center;     
+gap: 8px; 
+position: relative;
+text-align: center;
+font-size: 16px;
+width: 200px;
+height: 55px;
+background-image: linear-gradient(#121252, #181818);
+background-clip: border-box;
+color: aliceblue;
+font-weight: bold;
+border: none;
+border-image: linear-gradient(#121252, #181818);
+border-radius: 6px;
+}
+
+.botao-cv:active {
+cursor: pointer;
+display: flex;           
+align-items: center;         
+justify-content: center;     
+gap: 8px; 
+position: relative;
+text-align: center;
+font-size: 16px;
+width: 200px;
+height: 55px;
+background-image: linear-gradient(#0f0f46, #0c0c0c);
+background-clip: border-box;
+color: aliceblue;
+font-weight: bold;
+border: none;
+border-image: linear-gradient(#0f0f46, #0c0c0c);
+border-radius: 6px;
+}
+
 #botoes-main {
+gap: 15px;
+justify-content: center;
+display: flex;
 padding: 50px;
+align-items: center;
 }
 
 .material-symbols-outlined {
@@ -131,6 +184,19 @@ header a {
 header a:hover {
     text-decoration: none;
     color: #784596;
+}
+
+.logos-redes-sociais {
+    color: white;
+    margin: 10px;
+}
+
+.logos-redes-sociais:hover {
+    color: rgb(201, 201, 201);
+}
+
+.logos-redes-sociais:active {
+    color: rgb(179, 179, 179);
 }
 
 /* FRONT */
@@ -227,6 +293,7 @@ text-align: center;
     padding: 13px 20px 20px 20px;
     margin-top: 10px;
 }
+
 .botoes-projetos {
     height: 100px;
     display: flex;
@@ -236,6 +303,10 @@ text-align: center;
 }
 
 .btnDemo {
+    display: flex;           
+    align-items: center;         
+    justify-content: center;     
+    gap: 8px;
     border: 2px solid white;
     padding: 15px;
     width: 180px;
@@ -287,16 +358,28 @@ text-align: center;
 }
 
 .btnCodigo {
-    padding: 15px;
-    width: 180px;
-    height: 50px;
-    text-align: center;
-    text-decoration: none;
-    color: aliceblue; 
-    font-weight: bold;
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
-    border-radius: 12px 12px 12px 12px;
-    background-color: rgb(5, 5, 5);
+display: flex;           
+align-items: center;         
+justify-content: center;     
+gap: 8px; 
+padding: 15px;
+width: 180px;
+height: 50px;
+text-decoration: none;
+color: aliceblue; 
+font-weight: bold;
+box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+border-radius: 12px 12px 12px 12px;
+background-color: rgb(5, 5, 5);
+}
+
+.intern-btncodigo {
+border: 1px solid white;
+width: 40px;
+display: flex;           
+align-items: center;         
+justify-content: center;     
+gap: 8px; 
 }
 
 .btnCodigo:hover {
@@ -339,6 +422,14 @@ background-color: rgb(37, 37, 37);
 
 .div-contato {
     width: 50%;
+    display: flex;
+}
+
+.text-contato{
+width: 70%;
+height: 60%;
+margin-left: 20%;
+margin-top: 9%;
 }
 
 .div-form {
@@ -531,6 +622,7 @@ background-color: rgb(0, 0, 0);
 box-shadow: 0 0 0 0.5px rgba(255, 255, 255, 0.1);
 display: flex;
 }
+
 .text-rodape1{
     margin-left: 160px;
     margin-top: 40px;
@@ -540,6 +632,7 @@ display: flex;
     color: rgb(212, 212, 212);
     box-shadow: 0 0.5px 0 0 rgba(255, 255, 255, 0.1);
 }
+
 .text-rodape2{
     display: flexbox;
     margin-top: 45px;
@@ -547,13 +640,16 @@ display: flex;
     width: 34%;
     box-shadow: 0 0.5px 0 0 rgba(255, 255, 255, 0.1);
 }
+
 .text-rodape3{
     margin-top: 45px;
     display: flexbox;
     height: 150px;
     width: 14%;
     box-shadow: 0 0.5px 0 0 rgba(255, 255, 255, 0.1);
+
 }
+
 .dev-title {
     font-weight: bold;
     font-size: 28px;
@@ -561,12 +657,14 @@ display: flex;
     background-clip: text;
     color: transparent;
 }
+
 .links-rapidos-rodape,.links-rapidos-rodape a {
     text-decoration: none;
     display: grid;
     gap: 10px;
     color: rgb(212, 212, 212);
 }
+
 .links-rapidos-rodape a:hover{
     text-decoration: none;
     display: grid;
