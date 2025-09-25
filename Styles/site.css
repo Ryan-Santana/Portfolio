@@ -11,15 +11,15 @@ scroll-behavior: smooth;
 
 main {
 text-align: center;
-height: 950px;
+height: 940px;
 font-size: 30px;
-padding-top: 290px;
+padding-top: 250px;
 color: #fff;
 }
 
 /* FRONT */
 #front {
-    position: relative;
+position: relative;
 background-image: url("fundoroxo.png");
 background-size: cover;
 background-repeat: no-repeat;
@@ -29,7 +29,7 @@ background-position: center;
 
 .container {
 color: aliceblue;
-height: 100px;
+height: 10vh;
 width: 100%;
 text-align: right;
 background-color: transparent;
@@ -40,7 +40,7 @@ background: none;
 font-size: 22px;    
 display: inline-block;
 font-weight: bold;
-margin: 35px;
+margin: 2%;
 }       
 
 .gradiente {
@@ -63,7 +63,7 @@ background-clip: border-box;
 color: aliceblue;
 font-weight: bold;
 border: none;
-border-image: linear-gradient(#8a2be2, #6A1B9A);
+border-image: linear-gradient(to left #8a2be2, #6A1B9A);
 border-radius: 6px;
 }
 
@@ -79,7 +79,7 @@ background-clip: border-box;
 color: aliceblue;
 font-weight: bold;
 border: none;
-border-image: linear-gradient(#6c20b3, #6A1B9A);
+border-image: linear-gradient(to left #6c20b3, #6A1B9A);
 border-radius: 6px;
 }
 
@@ -95,7 +95,7 @@ background-clip: border-box;
 color: aliceblue;
 font-weight: bold;
 border: none;
-border-image: linear-gradient(#3e0f69, #3e0f69);
+border-image: linear-gradient(to left #3e0f69, #3e0f69);
 border-radius: 6px;
 }
 
@@ -113,13 +113,13 @@ position: relative;
 text-align: center;
 font-size: 16px;
 width: 200px;
-height: 55px;
+height: 55px; 
 background-image: linear-gradient(#191970, #212121);
 background-clip: border-box;
 color: aliceblue;
 font-weight: bold;
 border: none;
-border-image: linear-gradient(#191970, #212121);
+border-image: linear-gradient(to left #191970, #212121);
 border-radius: 6px;
 }
 
@@ -139,7 +139,7 @@ background-clip: border-box;
 color: aliceblue;
 font-weight: bold;
 border: none;
-border-image: linear-gradient(#121252, #181818);
+border-image: linear-gradient(to left #121252, #181818);
 border-radius: 6px;
 }
 
@@ -159,15 +159,15 @@ background-clip: border-box;
 color: aliceblue;
 font-weight: bold;
 border: none;
-border-image: linear-gradient(#0f0f46, #0c0c0c);
+border-image: linear-gradient(to left #0f0f46, #0c0c0c);
 border-radius: 6px;
 }
 
 #botoes-main {
-gap: 15px;
+gap: 1vw;
 justify-content: center;
 display: flex;
-padding: 50px;
+padding: 3%;
 align-items: center;
 }
 
@@ -289,6 +289,12 @@ text-align: center;
     border-radius: 12px 12px 12px 12px;
 }
 
+.fotos-projetos{
+width: 450.5px; 
+height:250px;
+border-radius: 12px 12px 0 0;
+}
+
 .desc-projetos {
     padding: 13px 20px 20px 20px;
     margin-top: 10px;
@@ -299,7 +305,7 @@ text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px 20px;
+    gap: 10px 20px; 
 }
 
 .btnDemo {
@@ -418,6 +424,12 @@ width: 100%;
 height: 1000px;
 color: aliceblue;
 background-color: rgb(37, 37, 37);
+}
+
+.div-contato-pai {
+width: 100%;
+height: 800px;
+display: flex;
 }
 
 .div-contato {
@@ -673,3 +685,330 @@ display: flex;
     text-decoration: underline;
 }
 /* RODAPÉ */
+
+
+
+/* MOBILE 768px MAX */
+@media (max-width: 768px) {
+
+/* MAIN */
+.main {
+    width: 414px;
+    display: flex;
+}
+/* MAIN */
+
+
+/* FRONT */
+  .botao-projeto {
+    font-size: 14px;
+  }
+
+/* FRONT */
+
+/* SOBRE MIM */
+/* SOBRE MIM */
+
+/* PROJETOS */
+#projetos {
+width: 100%;
+height: 2200px;
+box-shadow: 0 0 0 0.5px rgba(255, 255, 255, 0.1);
+align-content: start;
+text-align: center;
+}
+
+#div-projetos {
+    margin: 40px;
+    height: 650px;
+    list-style: none;
+    display: list-item;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 40px;
+}
+
+.card-projeto {
+    width: 90%;
+    margin-top: 20%;
+    height: 570px;
+}
+
+.desc-projetos {
+    padding: 3% 5% 5% 5%;
+    margin-top: 3%;
+}
+
+.botoes-projetos {
+    height: 100px;
+    gap: 3%;
+}
+
+.fotos-projetos {
+    width: 100%;
+}
+/* PROJETOS */
+
+
+/* CONTATOS */
+#contato {
+height: 1500px;
+color: aliceblue;
+background-color: rgb(37, 37, 37);
+display: flex;
+flex-direction: column;
+}
+
+.mini-title-h1 {
+    width: 100%;
+}
+
+.div-contato {
+    width: 100%;
+    border: 1px solid white;
+}
+
+.div-contato-pai {
+width: 100%;
+height: 800px;
+display: flex;
+flex-wrap: wrap;
+}
+
+.div-form {
+    margin: 20px;
+    width: 90%;
+}
+
+.badge-contato {
+padding: 10px;
+width: 60px;
+height: 60px;
+margin-top: 30px;
+border-radius: 15px;
+text-align: center;
+background-clip: border-box;
+}
+
+.logo-email {
+ color: white;
+ background-color: white;
+ height: 40px;
+ width: 40px;
+}
+
+li {
+    display: flex;
+    margin-left: 40px;
+    width: 50%;
+}
+
+li section{
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.pai-logo-contato {
+    border: 1px solid white;
+    height: 150px;
+    width: 80px;
+}
+
+.card-form{
+    width: 100%;
+    height: 670px;
+    padding: 75px 30px;
+    display: flexbox;
+}
+
+.prim-linha-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6%;
+    
+}
+
+.input-form {
+    height: 40px;
+    width: 100%;
+    color: white;
+    margin-top: 5px;
+}
+
+.input-form:focus {
+    background-color: rgb(47, 47, 47);;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.055);
+    border-radius: 12px;
+    border: none;
+    color: white;
+}
+
+.input-assunto {
+    background-color: rgb(37, 37, 37);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    border: none;
+    height: 40px;
+    width: 100%;
+    color: white;
+    margin-top: 5px;
+}
+
+.input-assunto:focus {
+    background-color: rgb(47, 47, 47);;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.055);
+    border-radius: 12px;
+    border: none;
+    color: white;
+}
+
+.input-msg {
+    background-color: rgb(37, 37, 37);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    border: none;
+    height: 120px;
+    width: 100%;
+    color: white;
+    text-align: justify;
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+
+.input-msg:focus {
+    background-color: rgb(47, 47, 47);;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.055);
+    border-radius: 12px;
+    border: none;
+    color: white;
+}
+
+.seg-linha-form, .terc-linha-form {
+    margin-top: 40px;
+}
+
+.enviar-email {
+    margin-top: 40px;
+    border: 2px solid white;
+    padding: 15px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    box-shadow: 0 0 0 1px linear-gradient(to left,#a65fe9, #822bd3);
+    border-radius: 12px 12px 12px 12px;
+    background-image: linear-gradient(to left,#a85dee, #6A1B9A);
+    background-clip: border-box;    
+    border: none;
+    border-image: linear-gradient(#a85dee, #6A1B9A);
+}
+
+.enviar-email:hover {
+    cursor: pointer;
+    margin-top: 40px;
+    border: 2px solid white;
+    padding: 15px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    box-shadow: 0 0 0 1px linear-gradient(to left,#bd85f1, #9c52e2);
+    border-radius: 12px 12px 12px 12px;
+    background-image: linear-gradient(to left,#bd85f1, #9c52e2);
+    background-clip: border-box;    
+    border: none;
+    border-image: linear-gradient(#bd85f1, #9c52e2);
+}
+
+.enviar-email:active {
+    margin-top: 40px;
+    border: 2px solid white;
+    padding: 15px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    box-shadow: 0 0 0 1px linear-gradient(to left,#6A1B9A, #4c1170);
+    border-radius: 12px 12px 12px 12px;
+    background-image: linear-gradient(to left,#6A1B9A, #4c1170);
+    background-clip: border-box;    
+    border: none;
+    border-image: linear-gradient(#6A1B9A, #4c1170);
+}
+/* CONTATOS */
+
+/* RODAPÉ */
+#rodape {
+width: 100%;
+height: 190px;
+display: flex;
+}
+
+.text-rodape1{
+    font-size: 0.80rem;
+    margin: 5% 10%;
+    display: flexbox;
+    height: 50px;
+    width: 14%;
+    box-shadow: 0 0.5px 0 0 rgba(255, 255, 255, 0.1);
+
+}
+
+.text-rodape2{
+    font-size: 0.80rem;
+    margin: 5% 9%;
+    display: flexbox;
+    height: 50px;
+    width: 14%;
+    box-shadow: 0 0.5px 0 0 rgba(255, 255, 255, 0.1);
+
+}
+
+.text-rodape3{ 
+    font-size: 0.80rem;
+    margin: 5% 9%;
+    display: flexbox;
+    height: 50px;
+    width: 14%;
+    box-shadow: 0 0.5px 0 0 rgba(255, 255, 255, 0.1);
+}
+
+.dev-title {
+    font-weight: bold;
+    font-size: 0.80rem;
+    background-image: linear-gradient(to top,#8426db, #0ed5e4);
+    background-clip: text;
+    color: transparent;
+}
+
+.links-rapidos-rodape,.links-rapidos-rodape a {
+    margin-top: 5px;
+    text-decoration: none;
+    display: grid;
+    gap: 20px;
+    color: rgb(212, 212, 212);
+}
+
+.links-rapidos-rodape a:hover{
+    text-decoration: none;
+    display: grid;
+    gap: 20px;
+    color: rgb(212, 212, 212);
+    text-decoration: underline;
+}
+
+.logos-redes-sociais svg{
+    margin: 5px;
+}
+/* RODAPÉ */
+
+}
+/* MOBILE 768px MAX */
