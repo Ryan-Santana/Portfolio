@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,25 +15,22 @@
     <div id="front">
         <section>
             <header class="container">
-                <a href="#front" class="right-nav"> Início</a>
-                <a href="#sobre" class="right-nav"> Sobre</a>
-                <a href="#projetos" class="right-nav"> Projetos</a>
-                <a href="#contato" class="right-nav"> Contato</a>
-                <input type="checkbox" style="display: none;" name="ptbr/enus" id="toggle-language">
-                <label for="toggle-language" class="troca-lingua">
-                    <span style = "lang-br">BR</span>
-                    <span style = "lang-us">US</span>
-                    <span class="bandeira"></span>
+                <a href="#front" class="right-nav"> Home</a>
+                <a href="#sobre" class="right-nav"> About Me</a>
+                <a href="#projetos" class="right-nav"> Projects</a>
+                <a href="#contato" class="right-nav"> Contact</a>
+                <label for="" class="troca-lingua">
+                    <input type="radio" name="ptbr/enus" onclick="window.location.href='index.html'" id="toggle-language">
                 </label>
             </header>
         </section>
         <main id="main-page">
-            <h1 class="gradiente">Olá, eu sou</h1>
+            <h1 class="gradiente">Hi, I am</h1>
             <h1>Ryan Lourenço Santana</h1>
-            <h4 style="color: darkgray;">Engenheiro de Software</h4>
+            <h4 style="color: darkgray;">Software Engineer</h4>
             <section id="botoes-main">
-                <a href="#projetos" class="botao-projeto">Ver Projetos<span class="material-symbols-outlined">south</span></a>
-                <button class="botao-cv">Baixar CV <span class="material-symbols-outlined">download</span></button>
+                <button class="botao-projeto">See Projects<span class="material-symbols-outlined">south</span></button>
+                <button class="botao-cv">Download CV <span class="material-symbols-outlined">download</span></button>
             </section>
             <section id="redes-sociais">
                 <a class="logos-redes-sociais" href="https://github.com/Ryan-Santana"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -51,20 +48,20 @@
     </div>
     <div id="sobre">
         <section class="mini-title">
-            <h1 class="mini-title-h1">Sobre Mim</h1>
-        </section>
-        <div class="sobre-mim">
+            <h1 class="mini-title-h1">About Me</h1>
+        </section> 
+        <div style="display: flex;">
             <div class="content-sobremim">
-                <h3 class="titulo-eng-sobremim">Engenheiro de Software</h3>
-                <article class="texto-sobremim">
-                    <p><br>Um futuro Engenheiro de Software apaixonado por tecnologia, dados e finanças, com mais de 3 anos de expêriencia profissional. Especializado em dados com MySQL, Python, Excel, entre outros.</p>
-                    <p>Passei por bancos como Itaú e BNP Paribas, trabalhando e aprendendo com alguns dos melhores profissionais do ramo.</p>
-                    <p>Tenho constante necessidade de estar aprendendo algo novo, sempre busco aprender novas tecnologias e ensiná-las como forma de aprendizado.</p>
-                    <p>No meu tempo livre, gosto de passar tempo com minha familía, sair com amigos e escutar música.</p>
+                <h3 style="margin-top: 70px; margin-right: 156px;text-align: center;">Software Engineer</h3>
+                <article style="margin-top: 15px;text-align: left; margin-left: 305px;">
+                    <p><br>Um futuro Engenheiro de Software apaixonado por tecnologia, dados e finanças, com mais de 3 anos de expêriencia profissional. Especializado em dados com MySQL, Apache Spark, Hadoop, entre outros.</p>
+                    <p style="margin-top: 25px;">Passei por bancos como Itaú e BNP Paribas, trabalhando e aprendendo com alguns dos melhores profissionais do ramo.</p>
+                    <p style="margin-top: 25px;">Tenho constante necessidade de estar aprendendo algo novo, sempre busco aprender novas tecnologias e ensina-las como forma de aprendizado.</p>
+                    <p style="margin-top: 25px;">No meu tempo livre, gosto de passar tempo com minha familía e amigos e escutar música.</p>
                 </article>
             </div>
-            <div class="content-ferramentas">
-                <h3 class="tec-fer">Tecnologias & Ferramentas</h3>
+            <div class="content-ferramentas" style="margin-top: 85px; margin-left: 50px;">
+                <h3 style="margin-bottom: 20px; margin-top: 20px;">Technologies & Tools</h3>
                 <div class="badges">
                     <span class="badge">Python</span>
                     <span class="badge">JavaScript</span>
@@ -72,21 +69,19 @@
                     <span class="badge">CSS3</span>
                     <span class="badge">MySQL</span>
                     <span class="badge">AWS</span>
-                    <span class="badge">Excel</span>
-                    <div class="segunda-linha-badges">
-                        <span class="badge">GitHub</span>
-                        <span class="badge">Knime</span>
-                        <span class="badge">Alteryx</span>
-                    </div>
+                    <span class="badge">Excel</span><br><br><br>
+                    <span class="badge">GitHub</span>
+                    <span class="badge">Knime</span>
+                    <span class="badge">Alteryx</span>
                 </div>
             </div>
         </div>
     </div>
     <div id="projetos">
         <section class="mini-title">
-            <h1 class="mini-title-h1">Projetos</h1>
+            <h1 class="mini-title-h1">Projects</h1>
         </section>
-        <p style="position: absolute; top: 140px; right: 813px; color: rgba(240, 255, 255, 0.733); font-weight: 300">Alguns dos meus projetos pessoais</p>
+        <p style="position: absolute; top: 140px; right: 847px; color: rgba(240, 255, 255, 0.733); font-weight: 300">Some of my latest projects</p>
         <div id="div-projetos">
             <div class="card-projeto">
                 <img src="https://content.presentermedia.com/files/clipart/00007000/7940/woman_standing_construction_site_pc_800_wht.jpg" class="fotos-projetos" alt="dummy">
@@ -135,13 +130,13 @@
     </div>
     <div id="contato">
         <section class="mini-title">
-            <h1 class="mini-title-h1">Contato</h1>
+            <h1 class="mini-title-h1">Contact</h1>
         </section>
-        <p style="position: absolute; top: 140px; right: 883px; color: rgba(240, 255, 255, 0.733); font-weight: 300">Vamos conversar</p>
+        <p style="position: absolute; top: 140px; right: 917px; color: rgba(240, 255, 255, 0.733); font-weight: 300">Lets talk</p>
         <div class="div-contato-pai">
          <div class="div-contato">
             <section class="text-contato">
-            <h2 style="padding: 40px;">Entre em contato</h2>
+            <h2 style="padding: 40px;">Contact me</h2>
             <ul class="lista-contato">
                 <li>
                     <div class="badge-contato"><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"><path d="M19.5,2H4.5C2.019,2,0,4.019,0,6.5v11c0,2.481,2.019,4.5,4.5,4.5h15c2.481,0,4.5-2.019,4.5-4.5V6.5c0-2.481-2.019-4.5-4.5-4.5ZM4.5,3h15c1.084,0,2.043,.506,2.686,1.283l-7.691,7.692c-.662,.661-1.557,1.025-2.497,1.025-.914-.017-1.826-.36-2.492-1.025L1.814,4.283c.643-.777,1.601-1.283,2.686-1.283Zm18.5,14.5c0,1.93-1.57,3.5-3.5,3.5H4.5c-1.93,0-3.5-1.57-3.5-3.5V6.5c0-.477,.097-.931,.271-1.346l7.528,7.528c.851,.851,1.98,1.318,3.177,1.318s2.375-.467,3.226-1.318l7.528-7.528c.174,.415,.271,.869,.271,1.346v11Z"/></svg></div>
@@ -153,15 +148,15 @@
                 <li>
                     <div class="badge-contato"><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 27 27" width="44" height="44"><path d="M15.5,24h-7c-2.481,0-4.5-2.019-4.5-4.5V4.5C4,2.019,6.019,0,8.5,0h7c2.481,0,4.5,2.019,4.5,4.5v15c0,2.481-2.019,4.5-4.5,4.5ZM8.5,1c-1.93,0-3.5,1.57-3.5,3.5v15c0,1.93,1.57,3.5,3.5,3.5h7c1.93,0,3.5-1.57,3.5-3.5V4.5c0-1.93-1.57-3.5-3.5-3.5h-7Zm5.5,19.5c0-.276-.224-.5-.5-.5h-3c-.276,0-.5,.224-.5,.5s.224,.5,.5,.5h3c.276,0,.5-.224,.5-.5Z"/></svg></div>
                     <section>
-                        <strong>Telefone</strong>    
+                        <strong>Mobile Number</strong>    
                         <p>+55 (11) 98846-5283</p>
                     </section>
                 </li>
                 <li>
                     <div class="badge-contato"><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"><path d="m12,16.791l4.949-4.841c1.322-1.322,2.051-3.08,2.051-4.95s-.729-3.627-2.051-4.95c-1.321-1.322-3.079-2.05-4.949-2.05s-3.628.728-4.95,2.05c-2.729,2.729-2.729,7.17.004,9.903l4.946,4.837ZM7.757,2.757c1.134-1.133,2.641-1.757,4.243-1.757s3.109.624,4.242,1.757c1.134,1.133,1.758,2.64,1.758,4.243s-.624,3.109-1.754,4.239l-4.246,4.154-4.243-4.15c-2.339-2.339-2.339-6.146,0-8.485Zm4.243,7.223c1.648,0,2.99-1.341,2.99-2.99s-1.342-2.99-2.99-2.99-2.99,1.341-2.99,2.99,1.342,2.99,2.99,2.99Zm0-4.98c1.098,0,1.99.893,1.99,1.99s-.893,1.99-1.99,1.99-1.99-.893-1.99-1.99.893-1.99,1.99-1.99Zm11.943,11.846l-11.943,7.166L.057,16.846l5.664-3.398h0l.783.766-4.503,2.632,10,6,10-6-4.482-2.654.761-.744,5.665,3.399Z"/></svg></div>
                     <section>
-                        <strong>Localização</strong>
-                        <p>São Paulo, Brasil</p>
+                        <strong>Location</strong>
+                        <p>Sao Paulo, Brazil</p>
                     </section>
                 </li>
             </ul>
@@ -171,23 +166,23 @@
             <div class="card-form">
                 <section class="prim-linha-form">
                     <div>
-                        <h4>Nome</h4>
-                        <input class="input-form" type="text" placeholder="Seu nome">
+                        <h4>Name</h4>
+                        <input class="input-form" type="text" placeholder="Your name">
                     </div>
                     <div>
                         <h4>Email</h4>
-                        <input class="input-form" type="email" placeholder="seu@email.com">
+                        <input class="input-form" type="email" placeholder="your@email.com">
                     </div>
                 </section>
                 <section class="seg-linha-form">
-                    <h4>Assunto</h4>
-                    <input class="input-assunto" type="text" placeholder="Assunto da Mensagem">
+                    <h4>Subject</h4>
+                    <input class="input-assunto" type="text" placeholder="Subject of your message">
                 </section>
                 <section class="terc-linha-form">
-                    <h4>Mensagem</h4>
-                    <input class="input-msg" type="text" placeholder="Sua mensagem...">
+                    <h4>Message</h4>
+                    <input class="input-msg" type="text" placeholder="Your Message...">
                 </section>
-                <button class="enviar-email" title="enviar-email">Enviar Email</button>
+                <button class="enviar-email" title="enviar-email">Send Email</button>
             </div>
          </div>  
         </div>
@@ -197,19 +192,19 @@
             <h3 class="dev-title">Dev Portfolio</h3>
             <br>
             <br>
-            <p style="color: darkgrey;">Engenheiro de Software</p>
+            <p style="color: darkgrey;">Software engineer</p>
         </section>
         <section class="text-rodape2">
-            <h3>Links Rápidos</h3>
+            <h3>Useful Links</h3>
             <br>
             <div class="links-rapidos-rodape">
-                <a href="">Sobre</a>
-                <a href="">Projetos</a>
-                <a href="">Contatos</a>
+                <a href="">About Me</a>
+                <a href="">Projects</a>
+                <a href="">Contact</a>
             </div>
         </section>
         <section class="text-rodape3">
-            <h3>Redes Sociais</h3>
+            <h3>Social Medias</h3>
             <br>
             <div style="margin-top: 8px;">
                 <a href="https://github.com/Ryan-Santana" class="logos-redes-sociais" >

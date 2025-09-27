@@ -43,6 +43,27 @@ font-weight: bold;
 margin: 2%;
 }       
 
+.troca-lingua {
+align-items: center;
+justify-content: space-between;
+border-radius: 30px;
+background-color: azure;
+padding: 6px;
+}
+
+.lang-br {
+
+}
+
+.lang-us {
+
+}
+
+.bandeira {
+    position: absolute;
+    background-image: url(/Styles/brasil.jpg);
+    border-radius: 30px;
+}
 .gradiente {
 background-image: linear-gradient(purple, rgb(235, 115, 135));
 background-clip: text;
@@ -62,6 +83,7 @@ background-image: linear-gradient(to left,#8a2be2, #6A1B9A);
 background-clip: border-box;    
 color: aliceblue;
 font-weight: bold;
+text-decoration: none;
 border: none;
 border-image: linear-gradient(to left #8a2be2, #6A1B9A);
 border-radius: 6px;
@@ -228,9 +250,29 @@ box-shadow: 0 0 0 0.5px rgba(255, 255, 255, 0.1);
     color: transparent;
 }
 
+.titulo-eng-sobremim {
+margin-top: 70px; 
+margin-right: 105px;
+text-align: center;
+}
+
+.sobre-mim {
+display: flex; 
+}
+
 .content-sobremim {
     width: 50%;
     height: 480px;
+}
+
+.texto-sobremim {
+margin-top: 15px;
+text-align: left; 
+margin-left: 305px;
+}
+
+article p {
+    margin-top: 25px;
 }
 
 .content-ferramentas {
@@ -239,22 +281,41 @@ box-shadow: 0 0 0 0.5px rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     width: 35%;
     height: 280px;
-    padding: 30px;
+    padding: 1.75%;
+    margin-top: 85px; 
+    margin-left: 50px;
+}
+
+.tec-fer {
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+}
+
+.segunda-linha-badges {
+    margin-top: 6%;
 }
 
 .badges {
     display: inline-block;
     vertical-align: middle;
-    gap: 15px;
     margin-top: 30px;
+    width: 95%;
 }
 
 .badge {
-padding: 8px;
+cursor: default;
+padding: 0.5rem;
 background-image: linear-gradient(to left,#8a2be2, #6A1B9A);
 border-image: linear-gradient(#8a2be2, #6A1B9A);
 border-radius: 15px;
+}
 
+.badge:hover {
+cursor: default;
+padding: 0.5rem;
+background-image: linear-gradient(to left,#8229d6, #5d1988);
+border-image: linear-gradient(#8229d6, #5d1988);
+border-radius: 15px;
 }
 
 
@@ -707,6 +768,96 @@ display: flex;
 /* FRONT */
 
 /* SOBRE MIM */
+#sobre {
+display: flex;
+position: relative;
+width: 100%;
+height: 1450px;
+flex-direction: column;
+}
+
+.mini-title {
+    height: 150px;
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini-title-h1 {
+    font-weight: bold;
+    font-size: 42px;
+    background-image: linear-gradient(to top,#8529db, #0ed5e4);
+    background-clip: text;
+    color: transparent;
+}
+
+.titulo-eng-sobremim {
+margin: 30px;
+text-align: center;
+}
+
+.sobre-mim {
+display: flex; 
+flex-direction: column;
+padding: 2%;
+}
+
+.content-sobremim {
+    display: flex;
+    width: 100%;
+    height: 480px;
+    flex-direction: column;
+}
+
+.texto-sobremim {
+margin-top: 5px;
+text-align: left; 
+margin-left: 5px;
+}
+
+.content-ferramentas {
+    width: 80%;
+    height: 70vh;
+    padding: 1.75%;
+}
+
+.tec-fer {
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+    margin-left: 20px;
+}
+
+.segunda-linha-badges {
+    display: grid;
+    gap: 15%;
+}
+
+.badges {
+    display: grid;
+    vertical-align: middle;
+    width: 25%;
+    height: 60%; 
+    margin-left: 33%;
+    gap: 5%;
+}
+
+.badge {
+cursor: default;
+text-align: center;
+padding: 0.5rem;
+background-image: linear-gradient(to left,#8a2be2, #6A1B9A);
+border-image: linear-gradient(#8a2be2, #6A1B9A);
+border-radius: 15px;
+}
+
+.badge:hover {
+cursor: default;
+padding: 0.5rem;
+background-image: linear-gradient(to left,#8229d6, #5d1988);
+border-image: linear-gradient(#8229d6, #5d1988);
+border-radius: 15px;
+}
 /* SOBRE MIM */
 
 /* PROJETOS */
