@@ -8,12 +8,17 @@ html {
 scroll-behavior: smooth;
 }
 
+h4 {
+    color: darkgray;
+}
+
 main {
 text-align: center;
 height: 940px;
 font-size: 30px;
 padding-top: 250px;
 color: #fff;
+z-index: 2;
 }
 
 /* FRONT */
@@ -24,6 +29,8 @@ background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center;
+z-index: 2;
+
 }
 
 .container {
@@ -31,7 +38,6 @@ justify-content: right;
 color: aliceblue;
 height: 10vh;
 width: 100%;
-text-align: right;
 background-color: transparent;
 background: none;
 display: flex;
@@ -42,7 +48,12 @@ font-size: 22px;
 display: inline-block;
 font-weight: bold;
 margin: 2%;
+align-items: center;
 }       
+
+.input-trocalingua {
+    display: none;
+}
 
 .troca-lingua {
   margin-top: 1.7%;
@@ -168,7 +179,6 @@ background-clip: border-box;
 color: aliceblue;
 font-weight: bold;
 border: none;
-border-image: linear-gradient(to left, #191970, #212121);
 border-radius: 6px;
 }
 
@@ -188,7 +198,6 @@ background-clip: border-box;
 color: aliceblue;
 font-weight: bold;
 border: none;
-border-image: linear-gradient(to left, #121252, #181818);
 border-radius: 6px;
 }
 
@@ -208,7 +217,6 @@ background-clip: border-box;
 color: aliceblue;
 font-weight: bold;
 border: none;
-border-image: linear-gradient(to left, #0f0f46, #0c0c0c);
 border-radius: 6px;
 }
 
@@ -232,7 +240,12 @@ header a {
 
 header a:hover {
     text-decoration: none;
-    color: #784596;
+    color: #c5add3;
+}
+
+header a:active {
+    text-decoration: none;
+    color: #be8cdb;
 }
 
 .logos-redes-sociais {
@@ -248,6 +261,50 @@ header a:hover {
     color: rgb(179, 179, 179);
 }
 
+.section-botaotopo {
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    padding: 1%;
+    margin-top: 8%;
+    z-index: 1;
+}
+
+.botao-topo {
+    text-decoration: none;
+    z-index: 1;
+    bottom: 2%;
+    position: fixed;
+    color: white;
+    opacity: 40%;
+    background-color: grey;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 20px;
+}
+
+.botao-topo:hover {
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 1;
+    position: fixed;
+    color: white;
+    opacity: 40%;
+    background-color: grey;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 20px;
+}
+
+.bi-chevron-double-up{
+    margin-top: 5px;    
+}
 /* FRONT */
 
 
@@ -265,6 +322,16 @@ box-shadow: 0 0 0 0.5px rgba(255, 255, 255, 0.1);
     height: 200px;
     text-align: center; 
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 5%;
+}
+
+.mini-title p{
+    color: rgba(240, 255, 255, 0.733); 
+    font-weight: 300;
+    height: 200px;
     justify-content: center;
     align-items: center; 
 }
@@ -309,7 +376,7 @@ article p {
     width: 35%;
     height: 280px;
     padding: 1.75%;
-    margin-top: 85px; 
+    margin-top: 105px; 
     margin-left: 50px;
 }
 
@@ -332,6 +399,15 @@ article p {
 .badge {
 cursor: default;
 padding: 0.5rem;
+background-image: linear-gradient(to left,#8a2be2, #6A1B9A);
+border-image: linear-gradient(#8a2be2, #6A1B9A);
+border-radius: 15px;
+}
+
+.badge-projetos {
+cursor: default;
+padding: 0.5rem;
+margin-right: 10px;
 background-image: linear-gradient(to left,#8a2be2, #6A1B9A);
 border-image: linear-gradient(#8a2be2, #6A1B9A);
 border-radius: 15px;
@@ -528,6 +604,10 @@ margin-left: 20%;
 margin-top: 9%;
 }
 
+.text-contato h2 {
+    padding: 40px;
+}
+
 .div-form {
     margin: 20px;
     width: 50%;
@@ -662,7 +742,6 @@ li section{
     background-image: linear-gradient(to left,#a85dee, #6A1B9A);
     background-clip: border-box;    
     border: none;
-    border-image: linear-gradient(#a85dee, #6A1B9A);
 }
 
 .enviar-email:hover {
@@ -680,7 +759,6 @@ li section{
     background-image: linear-gradient(to left,#bd85f1, #9c52e2);
     background-clip: border-box;    
     border: none;
-    border-image: linear-gradient(#bd85f1, #9c52e2);
 }
 
 .enviar-email:active {
@@ -697,7 +775,6 @@ li section{
     background-image: linear-gradient(to left,#6A1B9A, #4c1170);
     background-clip: border-box;    
     border: none;
-    border-image: linear-gradient(#6A1B9A, #4c1170);
 }
 
 /* CONTATOS */
@@ -713,6 +790,7 @@ color: aliceblue;
 background-color: rgb(0, 0, 0);
 box-shadow: 0 0 0 0.5px rgba(255, 255, 255, 0.1);
 display: flex;
+align-items: center;
 }
 
 .text-rodape1{
@@ -722,6 +800,10 @@ display: flex;
     width: 34%;
     color: rgb(212, 212, 212);
     box-shadow: 0 0.5px 0 0 rgba(255, 255, 255, 0.1);
+}
+
+.text-rodape1 p{
+color: darkgray;
 }
 
 .text-rodape2{
@@ -737,6 +819,10 @@ display: flex;
     width: 14%;
     box-shadow: 0 0.5px 0 0 rgba(255, 255, 255, 0.1);
 
+}
+
+.text-rodape3 div {
+    margin-top: 8px;
 }
 
 .dev-title {
