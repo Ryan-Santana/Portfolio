@@ -1,9 +1,8 @@
-* {
+* { 
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 font-family: "Montserrat", sans-serif;
-font-optical-sizing: auto;
 }
 html {
 scroll-behavior: smooth;
@@ -107,13 +106,13 @@ text-align: center;
 font-size: 16px;
 height: 55px;
 width: 200px;
-background-image: linear-gradient(to left,#8a2be2, #6A1B9A);
+background-image: linear-gradient(to left, #8a2be2, #6A1B9A);
 background-clip: border-box;    
 color: aliceblue;
 font-weight: bold;
 text-decoration: none;
 border: none;
-border-image: linear-gradient(to left #8a2be2, #6A1B9A);
+border-image: linear-gradient(to left, #8a2be2, #6A1B9A);
 border-radius: 6px;
 }
 
@@ -129,7 +128,7 @@ background-clip: border-box;
 color: aliceblue;
 font-weight: bold;
 border: none;
-border-image: linear-gradient(to left #6c20b3, #6A1B9A);
+border-image: linear-gradient(to left, #6c20b3, #6A1B9A);
 border-radius: 6px;
 }
 
@@ -145,7 +144,7 @@ background-clip: border-box;
 color: aliceblue;
 font-weight: bold;
 border: none;
-border-image: linear-gradient(to left #3e0f69, #3e0f69);
+border-image: linear-gradient(to left, #3e0f69, #3e0f69);
 border-radius: 6px;
 }
 
@@ -169,7 +168,7 @@ background-clip: border-box;
 color: aliceblue;
 font-weight: bold;
 border: none;
-border-image: linear-gradient(to left #191970, #212121);
+border-image: linear-gradient(to left, #191970, #212121);
 border-radius: 6px;
 }
 
@@ -189,7 +188,7 @@ background-clip: border-box;
 color: aliceblue;
 font-weight: bold;
 border: none;
-border-image: linear-gradient(to left #121252, #181818);
+border-image: linear-gradient(to left, #121252, #181818);
 border-radius: 6px;
 }
 
@@ -209,7 +208,7 @@ background-clip: border-box;
 color: aliceblue;
 font-weight: bold;
 border: none;
-border-image: linear-gradient(to left #0f0f46, #0c0c0c);
+border-image: linear-gradient(to left, #0f0f46, #0c0c0c);
 border-radius: 6px;
 }
 
@@ -409,7 +408,6 @@ border-radius: 12px 12px 0 0;
     text-decoration: none;
     color: aliceblue;
     font-weight: bold;
-    box-shadow: 0 0 0 1px linear-gradient(to left,#a65fe9, #822bd3);
     border-radius: 12px 12px 12px 12px;
     background-image: linear-gradient(to left,#a85dee, #6A1B9A);
     background-clip: border-box;    
@@ -426,7 +424,6 @@ border-radius: 12px 12px 0 0;
     text-decoration: none;
     color: aliceblue;
     font-weight: bold;
-    box-shadow: 0 0 0 1px linear-gradient(to left,#a65fe9, #822bd3);
     border-radius: 12px 12px 12px 12px;
     background-image: linear-gradient(to left,#c79fec, #a24af5);
     background-clip: border-box;    
@@ -443,7 +440,6 @@ border-radius: 12px 12px 0 0;
     text-decoration: none;
     color: aliceblue;
     font-weight: bold;
-    box-shadow: 0 0 0 1px linear-gradient(to left,#a65fe9, #822bd3);
     border-radius: 12px 12px 12px 12px;
     background-image: linear-gradient(to left,#a65fe9, #822bd3);
     background-clip: border-box;    
@@ -581,7 +577,6 @@ li section{
     width: 75%;
     height: 80%;
     padding: 75px 30px;
-    display: flexbox;
 }
 
 .prim-linha-form {
@@ -663,7 +658,6 @@ li section{
     text-decoration: none;
     color: aliceblue;
     font-weight: bold;
-    box-shadow: 0 0 0 1px linear-gradient(to left,#a65fe9, #822bd3);
     border-radius: 12px 12px 12px 12px;
     background-image: linear-gradient(to left,#a85dee, #6A1B9A);
     background-clip: border-box;    
@@ -682,7 +676,6 @@ li section{
     text-decoration: none;
     color: aliceblue;
     font-weight: bold;
-    box-shadow: 0 0 0 1px linear-gradient(to left,#bd85f1, #9c52e2);
     border-radius: 12px 12px 12px 12px;
     background-image: linear-gradient(to left,#bd85f1, #9c52e2);
     background-clip: border-box;    
@@ -700,7 +693,6 @@ li section{
     text-decoration: none;
     color: aliceblue;
     font-weight: bold;
-    box-shadow: 0 0 0 1px linear-gradient(to left,#6A1B9A, #4c1170);
     border-radius: 12px 12px 12px 12px;
     background-image: linear-gradient(to left,#6A1B9A, #4c1170);
     background-clip: border-box;    
@@ -726,7 +718,6 @@ display: flex;
 .text-rodape1{
     margin-left: 160px;
     margin-top: 40px;
-    display: flexbox;
     height: 155px;
     width: 34%;
     color: rgb(212, 212, 212);
@@ -734,7 +725,6 @@ display: flex;
 }
 
 .text-rodape2{
-    display: flexbox;
     margin-top: 45px;
     height: 150px;
     width: 34%;
@@ -743,7 +733,6 @@ display: flex;
 
 .text-rodape3{
     margin-top: 45px;
-    display: flexbox;
     height: 150px;
     width: 14%;
     box-shadow: 0 0.5px 0 0 rgba(255, 255, 255, 0.1);
@@ -997,7 +986,6 @@ li section{
     width: 100%;
     height: 670px;
     padding: 75px 30px;
-    display: flexbox;
 }
 
 .prim-linha-form {
@@ -1077,7 +1065,6 @@ li section{
     text-decoration: none;
     color: aliceblue;
     font-weight: bold;
-    box-shadow: 0 0 0 1px linear-gradient(to left,#a65fe9, #822bd3);
     border-radius: 12px 12px 12px 12px;
     background-image: linear-gradient(to left,#a85dee, #6A1B9A);
     background-clip: border-box;    
@@ -1096,7 +1083,6 @@ li section{
     text-decoration: none;
     color: aliceblue;
     font-weight: bold;
-    box-shadow: 0 0 0 1px linear-gradient(to left,#bd85f1, #9c52e2);
     border-radius: 12px 12px 12px 12px;
     background-image: linear-gradient(to left,#bd85f1, #9c52e2);
     background-clip: border-box;    
@@ -1114,7 +1100,6 @@ li section{
     text-decoration: none;
     color: aliceblue;
     font-weight: bold;
-    box-shadow: 0 0 0 1px linear-gradient(to left,#6A1B9A, #4c1170);
     border-radius: 12px 12px 12px 12px;
     background-image: linear-gradient(to left,#6A1B9A, #4c1170);
     background-clip: border-box;    
@@ -1133,7 +1118,6 @@ display: flex;
 .text-rodape1{
     font-size: 0.80rem;
     margin: 5% 10%;
-    display: flexbox;
     height: 50px;
     width: 14%;
     box-shadow: 0 0.5px 0 0 rgba(255, 255, 255, 0.1);
@@ -1143,7 +1127,6 @@ display: flex;
 .text-rodape2{
     font-size: 0.80rem;
     margin: 5% 9%;
-    display: flexbox;
     height: 50px;
     width: 14%;
     box-shadow: 0 0.5px 0 0 rgba(255, 255, 255, 0.1);
@@ -1153,7 +1136,6 @@ display: flex;
 .text-rodape3{ 
     font-size: 0.80rem;
     margin: 5% 9%;
-    display: flexbox;
     height: 50px;
     width: 14%;
     box-shadow: 0 0.5px 0 0 rgba(255, 255, 255, 0.1);
