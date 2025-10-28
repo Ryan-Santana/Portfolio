@@ -15,16 +15,30 @@
     <div id="front">
         <section>
             <header class="container">
+                <div class="menu-pc">
                 <a href="#front" class="right-nav"> Início</a>
-                <a href="#sobre" class="right-nav"> Sobre</a>
-                <a href="#projetos" class="right-nav"> Projetos</a>
-                <a href="#contato" class="right-nav"> Contato</a>
-                <input type="checkbox" class="input-trocalingua" name="ptbr/enus" onclick="window.location.href='index-en.html'" id="troca-lingua">
-                <label for="troca-lingua" class="troca-lingua">
-                    <span class = "lang-br">US</span>
-                    <span class = "lang-us">BR</span>
-                    <span class="bandeira"></span>
-                </label>
+                    <a href="#sobre" class="right-nav"> Sobre</a>
+                    <a href="#projetos" class="right-nav"> Projetos</a>
+                    <a href="#contato" class="right-nav"> Contato</a>
+                    <input type="checkbox" class="input-trocalingua" name="ptbr/enus" onclick="window.location.href='index-en.html'" id="troca-lingua">
+                    <label for="troca-lingua" class="troca-lingua">
+                        <span class = "lang-br">US</span>
+                        <span class = "lang-us">BR</span>
+                        <span class="bandeira"></span>
+                    </label>
+                </div>
+                <div class="dropbox">☰</div>
+                <nav class="menu-mobile">
+                    <a href="#sobre">Sobre</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#contato">Contato</a>
+                    <input type="checkbox" class="input-trocalingua" name="ptbr/enus" onclick="window.location.href='index-en.html'" id="troca-lingua">
+                    <label for="troca-lingua" class="troca-lingua">
+                        <span class = "lang-br">US</span>
+                        <span class = "lang-us">BR</span>
+                        <span class="bandeira"></span>
+                    </label>
+                </nav>
             </header>
         </section>
         <main id="main-page">
@@ -96,7 +110,7 @@
         </section>
         <div id="div-projetos">
             <div class="card-projeto">
-                <img src="Styles\calculadora.png" class="fotos-projetos" alt="dummy" title="pic-projeto1">
+                <img src="Styles/calculadora.png" class="fotos-projetos" alt="dummy" title="pic-projeto1">
                 <section class="desc-projetos">
                     <h2>Calculadora</h2><br>
                     <p>Meu primeiro projeto, uma calculadora simples, feita em HTML-CSS-JS. <br> Usada para treino de aritméticos em JavaScript e práticas simples de front.<br></p><br>
@@ -110,7 +124,7 @@
                 </section>
             </div>
             <div class="card-projeto">
-                <img src="Styles\obra.jpg" class="fotos-projetos" alt="dummy" title="pic-projeto2">
+                <img src="Styles/obra.jpg" class="fotos-projetos" alt="dummy" title="pic-projeto2">
                 <section class="desc-projetos">
                     <h2>Em breve</h2><br>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aliquam animi placeat nobis asperiores commodi voluptatum quos repellendus provident deleniti,</p><br>
@@ -124,7 +138,7 @@
                 </section>
             </div>
             <div class="card-projeto">
-                <img src="Styles\obra.jpg" class="fotos-projetos" alt="dummy" title="pic-projeto3">
+                <img src="Styles/obra.jpg" class="fotos-projetos" alt="dummy" title="pic-projeto3">
                 <section class="desc-projetos">
                     <h2>Em breve</h2><br>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aliquam animi placeat nobis asperiores commodi voluptatum quos repellendus provident deleniti,</p><br>
@@ -151,7 +165,7 @@
             <h2>Entre em contato</h2>
             <ul class="lista-contato">
                 <li>
-                    <div class="badge-contato"><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"><path d="M19.5,2H4.5C2.019,2,0,4.019,0,6.5v11c0,2.481,2.019,4.5,4.5,4.5h15c2.481,0,4.5-2.019,4.5-4.5V6.5c0-2.481-2.019-4.5-4.5-4.5ZM4.5,3h15c1.084,0,2.043,.506,2.686,1.283l-7.691,7.692c-.662,.661-1.557,1.025-2.497,1.025-.914-.017-1.826-.36-2.492-1.025L1.814,4.283c.643-.777,1.601-1.283,2.686-1.283Zm18.5,14.5c0,1.93-1.57,3.5-3.5,3.5H4.5c-1.93,0-3.5-1.57-3.5-3.5V6.5c0-.477,.097-.931,.271-1.346l7.528,7.528c.851,.851,1.98,1.318,3.177,1.318s2.375-.467,3.226-1.318l7.528-7.528c.174,.415,.271,.869,.271,1.346v11Z"/></svg></div>
+                    <div class="badge-contato"><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 1 25 25" width="44" height="44"><path d="M19.5,2H4.5C2.019,2,0,4.019,0,6.5v11c0,2.481,2.019,4.5,4.5,4.5h15c2.481,0,4.5-2.019,4.5-4.5V6.5c0-2.481-2.019-4.5-4.5-4.5ZM4.5,3h15c1.084,0,2.043,.506,2.686,1.283l-7.691,7.692c-.662,.661-1.557,1.025-2.497,1.025-.914-.017-1.826-.36-2.492-1.025L1.814,4.283c.643-.777,1.601-1.283,2.686-1.283Zm18.5,14.5c0,1.93-1.57,3.5-3.5,3.5H4.5c-1.93,0-3.5-1.57-3.5-3.5V6.5c0-.477,.097-.931,.271-1.346l7.528,7.528c.851,.851,1.98,1.318,3.177,1.318s2.375-.467,3.226-1.318l7.528-7.528c.174,.415,.271,.869,.271,1.346v11Z"/></svg></div>
                     <section>
                         <strong>Email</strong>
                         <p>ryansantana2003@hotmail.com</p>
@@ -165,7 +179,7 @@
                     </section>
                 </li>
                 <li>
-                    <div class="badge-contato"><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"><path d="m12,16.791l4.949-4.841c1.322-1.322,2.051-3.08,2.051-4.95s-.729-3.627-2.051-4.95c-1.321-1.322-3.079-2.05-4.949-2.05s-3.628.728-4.95,2.05c-2.729,2.729-2.729,7.17.004,9.903l4.946,4.837ZM7.757,2.757c1.134-1.133,2.641-1.757,4.243-1.757s3.109.624,4.242,1.757c1.134,1.133,1.758,2.64,1.758,4.243s-.624,3.109-1.754,4.239l-4.246,4.154-4.243-4.15c-2.339-2.339-2.339-6.146,0-8.485Zm4.243,7.223c1.648,0,2.99-1.341,2.99-2.99s-1.342-2.99-2.99-2.99-2.99,1.341-2.99,2.99,1.342,2.99,2.99,2.99Zm0-4.98c1.098,0,1.99.893,1.99,1.99s-.893,1.99-1.99,1.99-1.99-.893-1.99-1.99.893-1.99,1.99-1.99Zm11.943,11.846l-11.943,7.166L.057,16.846l5.664-3.398h0l.783.766-4.503,2.632,10,6,10-6-4.482-2.654.761-.744,5.665,3.399Z"/></svg></div>
+                    <div class="badge-contato"><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 25 25" width="44" height="44"><path d="m12,16.791l4.949-4.841c1.322-1.322,2.051-3.08,2.051-4.95s-.729-3.627-2.051-4.95c-1.321-1.322-3.079-2.05-4.949-2.05s-3.628.728-4.95,2.05c-2.729,2.729-2.729,7.17.004,9.903l4.946,4.837ZM7.757,2.757c1.134-1.133,2.641-1.757,4.243-1.757s3.109.624,4.242,1.757c1.134,1.133,1.758,2.64,1.758,4.243s-.624,3.109-1.754,4.239l-4.246,4.154-4.243-4.15c-2.339-2.339-2.339-6.146,0-8.485Zm4.243,7.223c1.648,0,2.99-1.341,2.99-2.99s-1.342-2.99-2.99-2.99-2.99,1.341-2.99,2.99,1.342,2.99,2.99,2.99Zm0-4.98c1.098,0,1.99.893,1.99,1.99s-.893,1.99-1.99,1.99-1.99-.893-1.99-1.99.893-1.99,1.99-1.99Zm11.943,11.846l-11.943,7.166L.057,16.846l5.664-3.398h0l.783.766-4.503,2.632,10,6,10-6-4.482-2.654.761-.744,5.665,3.399Z"/></svg></div>
                     <section>
                         <strong>Localização</strong>
                         <p>São Paulo, Brasil</p>
