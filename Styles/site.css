@@ -34,13 +34,15 @@ z-index: 2;
 }
 
 .container {
-justify-content: right;
 color: aliceblue;
 height: 10vh;
 width: 100%;
 background-color: transparent;
 background: none;
 display: flex;
+justify-content: space-between; /* título à esquerda, menu à direita */
+align-items: center;
+padding: 0 40px;
 }
 
 .menu-pc {
@@ -235,6 +237,7 @@ border-radius: 6px;
 }
 
 #botoes-main {
+margin-top: 5%;
 gap: 1vw;
 justify-content: center;
 display: flex;
@@ -940,6 +943,9 @@ align-items: center;
     display: flex;
 }
 
+#botoes-main {
+margin-top: 20%;
+}
 /* FRONT */
 
 /* SOBRE MIM */
